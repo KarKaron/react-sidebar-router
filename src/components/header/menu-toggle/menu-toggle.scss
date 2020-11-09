@@ -5,29 +5,30 @@ nav {
   color: #fff;
 }
 
-.menuItem {
-  width: auto;
-}
+.menuItem {width: auto;}
 
 .menuItem.open {
   width: 280px;
   display: flex;
 }
 
-.whiteBtn {
+.icon {
   position: relative;
   margin-left: auto;
-  color: white;
   cursor: pointer;
   font-size: 1.5rem;
-  transition: opacity, left 1.6s ease-in;
+  transition: opacity, left .22s ease-in;
   z-index: 100;
   &:hover {
     opacity: .7;
   }
 }
 
+.icon-white {color: #fff;}
+.icon-black {color: #000;}
+
 .logo {
   font-size: 1.2rem;
   margin-left: 20px;
+  color: #fff;
 }

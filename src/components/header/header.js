@@ -12,16 +12,22 @@ const Header = () => {
     setOpen(() => !open) 
   }
 
+  const onClose = () => {
+    setOpen(() => false)
+  }
+
   return (
     <header className="header">
-      <MenuSidebar
-        open={open}
-        toggle={onToggle}
-      />
-      <MenuToggle
-        open={open} 
-        toggle={onToggle}
-      />
+      <div className="container">
+        <MenuSidebar
+          isOpen={open}
+          onClose={onClose}
+        />
+        <MenuToggle
+          isOpen={open} 
+          onToggle={onToggle}
+        />
+      </div>
     </header>
   );
 }

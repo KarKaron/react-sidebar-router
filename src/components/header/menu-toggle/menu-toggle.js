@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MenuIcon from './menu-icon';
+
 import './menu-toggle.scss';
 
 const MenuToggle = props => {
@@ -7,10 +9,16 @@ const MenuToggle = props => {
   return (
     <nav>
       <MenuIcon
-        open={props.open}
-        onToggle={props.toggle}
+        isOpen={props.isOpen}
+        onToggle={props.onToggle}
       />
-      <span className="logo">Logo</span>
+      <Link 
+        to="/" 
+        exact="true"
+        className="logo"
+      >
+        Logo
+      </Link>
     </nav>
   );
 }
