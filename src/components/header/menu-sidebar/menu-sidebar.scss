@@ -1,0 +1,35 @@
+$sidebar-bg: #ccc;
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80%;
+  max-width: 300px;
+  padding: 50px 10px 20px 10px;
+  box-sizing: border-box;
+  background: $sidebar-bg;
+  z-index: 90;
+  transform: translateX(0px);
+  transition: transform .22s ease-in;
+  display: flex;
+  align-items: flex-start;
+  &.close {
+    transform: translateX(-300px);
+  }
+  & ul {
+    list-style: none;
+  }
+  & ul li {
+    margin-bottom: 15px;
+  }
+  & ul li a {
+    color: #363636;
+    font-size: 22px;
+    text-decoration: none;
+    background-color: $sidebar-bg;
+    padding: 0 20px 10px 20px;
+    transition: opacity .3s;
+  } 
+}

@@ -1,0 +1,33 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+}
+
+.menuItem {
+  width: auto;
+}
+
+.menuItem.open {
+  width: 280px;
+  display: flex;
+}
+
+.whiteBtn {
+  position: relative;
+  margin-left: auto;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: opacity, left 1.6s ease-in;
+  z-index: 100;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.logo {
+  font-size: 1.2rem;
+  margin-left: 20px;
+}
